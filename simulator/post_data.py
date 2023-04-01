@@ -3,7 +3,7 @@ import random
 import datetime
 import requests
 
-for i in range(1):
+for i in range(1,3):
     #post
     volt = random.randrange(8, 12)
     time_instance = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")

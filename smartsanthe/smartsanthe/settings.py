@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'digital_solar',
+    'home',
+
 ]
 
 MIDDLEWARE = [
@@ -117,6 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+STATIC_ROOT = 'C:\\Users\\Admin\\PycharmProjects\\sss\\smartsanthe\\smartsanthe\\static'
 STATIC_URL = 'static/'
 
 # Default primary key field type

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Smart Santhe</title>
+    {% load static  %}
+    <link href="{% static 'home/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/main.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    {% block stat %}
+    {% endblock %}
+
+    <link href="{% static 'home/css/wmstly.css' %}" rel="stylesheet">
+
+    <script src="{% static 'home/js/html5shiv.js' %}"></script>
+    <script src="{% static 'home/js/respond.min.js' %}"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'home/images/ico/favicon.ico' %}">
+   <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'home/images/ico/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'home/images/ico/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'home/images/ico/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'home/images/ico/apple-touch-icon-57-precomposed.png' %}">-->
+</head><!--/head-->
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner" > <!--style="height: 80px;"  -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'home:home' %}"><img src="{% static 'home/images/logo.png' %}" alt="logo" vspace="10" hspace="20"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="{% block albums_home %}{% endblock %}"><a href="{% url 'home:home' %}">Home</a></li><!--class="{% block albums_active %}{% endblock %}"  class="active"-->
+                    <li class="{% block albums_about %}{% endblock %}"><a href="{% url 'home:about' %}">About Us</a></li>
+                    <li class="{% block albums_service %}{% endblock %}"><a href="{% url 'home:service' %}">Services</a></li>
+                    <li class="{% block albums_portfolio %}{% endblock %}"><a href="{% url 'home:portfolio' %}">Portfolio</a></li>
+                    <li class="{% block albums_download %}{% endblock %}"><a href="{% url 'home:download' %}">Download</a></li>
+
+                    <!--<li class="dropdown">
+                        <a href="{% static 'home/#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% static 'home/career.html">Career</a></li>
+                            <li><a href="{% static 'home/blog-item.html">Blog Single</a></li>
+                            <li><a href="{% static 'home/pricing.html">Pricing</a></li>
+                            <li><a href="{% static 'home/404.html">404</a></li>
+                            <li><a href="{% static 'home/registration.html">Registration</a></li>
+                            <li class="divider"></li>
+                            <li><a href="{% static 'home/privacy.html">Privacy Policy</a></li>
+                            <li><a href="{% static 'home/terms.html">Terms of Use</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% static 'home/blog.html">Blog</a></li>
+                    -->
+                    <li class="{% block albums_contact %}{% endblock %}"><a href="{% url 'home:contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+    {% block body %}
+    {% endblock %}
+    <section id="bottom" class="wet-asphalt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h4>About Us</h4>
+                    <p>It is magnificent to grow old, if one keeps young. </p><p>
+			Our team constantly interact with clients for perfection to the work we pick and giving the service beyond the contract.</p>
+
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <h4>Company</h4>
+                    <div>
+                        <ul class="arrow">
+                            <li><a href="#">Company Overview</a></li>
+                            <li><a href="#">Meet The Team</a></li>
+                            <li><a href="#">Our Awesome Partners</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                            <li><a href="#">Conatct Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-3-->
+<!--
+                <div class="col-md-3 col-sm-6">
+                    <h4>Latest Blog</h4>
+                    <div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="{% static 'home/images/blog/thumb1.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="{% static 'home/#">Pellentesque habitant morbi tristique senectus</a></span>
+                                <small class="muted">Posted 17 Aug 2013</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="{% static 'home/images/blog/thumb2.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="{% static 'home/#">Pellentesque habitant morbi tristique senectus</a></span>
+                                <small class="muted">Posted 13 Sep 2013</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="{% static 'home/images/blog/thumb3.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="{% static 'home/#">Pellentesque habitant morbi tristique senectus</a></span>
+                                <small class="muted">Posted 11 Jul 2013</small>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <h4>Address</h4>
+                    <address>
+                        <strong>Smart Santhe</strong><br>
+                        #4, Srisai Nivas, Ramamurthynagar<br>
+                        Bangalore, 560016<br>
+                        <abbr title="Phone">P:</abbr> (+91) 782 977 9915
+                    </address>
+<!--                    <h4>Newsletter</h4>
+                    <form role="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" autocomplete="off" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-danger" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </form> -->
+                </div> <!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                <h4>Our Location</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15549.25578554625!2d77.66857057144135!3d13.015668703230332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1121d646a235%3A0xbf0eec5468808a4f!2sRamamurthy+Nagar%2C+Bengaluru%2C+Karnataka+560016!5e0!3m2!1sen!2sin!4v1488877464191"
+                        width="300" height="245" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><!--/.col-sm-4-->
+
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="{% url 'home:home' %}">Home</a></li>
+                        <li><a href="{% url 'home:about' %}">About Us</a></li>
+                       <!-- <li><a href="{% static 'home/#">Faq</a></li>-->
+                        <li><a href="{% url 'home:contact' %}">Contact Us</a></li>
+                        <li><a id="gototop" class="gototop" href="{% static 'home/#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="{% static 'home/js/jquery.js' %}"></script>
+    <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'home/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'home/js/main.js' %}"></script>
+</body>
+</html>

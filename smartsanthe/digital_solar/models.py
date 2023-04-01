@@ -1,5 +1,5 @@
 from django.db import models
-
+# from djangodoo.models import OdooModel
 # Create your models here.
 
 

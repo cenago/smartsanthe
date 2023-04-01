@@ -4,6 +4,11 @@ _________________
 ### RUN and install
 
 requairments.txt
+
+makemigrations
+migrate
+createsuperuser
+runserver
 _______
 ### URL
 
