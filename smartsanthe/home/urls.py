@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'service', views.service, name='service'),
     url(r'portfolio', views.portfolio, name='portfolio'),
     url(r'download', views.download, name='download'),
+    url(r'report', views.report, name='report'),
     url(r'contact/', views.contact, name='contact'),
     url(r'contactF/', views.contactF, name='contactF'),
 ]
