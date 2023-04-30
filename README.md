@@ -28,3 +28,5 @@ Links
 -----
 PI Wifi Conn: https://youtu.be/GiT3MzRzG48
 
+
+https://rdmo.readthedocs.io/en/latest/deployment/nginx.html
