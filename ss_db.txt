@@ -1,0 +1,43 @@
+
+
+voltage_record
+--------------
+ID	     : 			pk
+DIV_ID   :   		fk
+VOLT	 :
+TS	     :
+panel_IDS: 			fk
+
+============================
+
+panels
+------
+panel_IDS
+wat
+volt
+ptype
+bill_no			fk
+
+===============================
+
+vera_divice
+-----------
+DIV_ID
+bill_no			fk
+location
+	LON	 : 2232321132
+	LAT	 : 4342111113
+
+=====================
+
+perchase
+--------
+bill_no
+bill_date
+ammount
+owner_name
+tt_divice
+tt_panels
+
+=======================
+
