@@ -10,8 +10,9 @@ for i in range(1):
     data = {"volt": volt, "time_instance": time_instance, "bill_no": "SS001"}
 
 
-    url = 'http://127.0.0.1:8000/api/v1/'
-    x = requests.get(url, json={'id':1})
+    url = 'http://smartsanthe.com/api/v1/'
+    x = requests.get(url)
     data = x.json()
-    print(data)
+    for i in data['Voltages']:
+        print(i)
     # time.sleep(2)
