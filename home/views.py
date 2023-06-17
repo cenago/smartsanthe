@@ -36,12 +36,12 @@ def contactF(request):
         email_form = request.POST.get('email')
         message_form = request.POST.get('message')
 
-        #query = request.GET.post("q")
+        # query = request.GET.post("q")
 
         # send_mail('test email', message_form + email_form, email_form, ['oksmailsoft@gmail.com'])
 
-        #form = ContactForm
-    #return render(request, 'home/contact-us.html', {'form': form})
+        # form = ContactForm
+    # return render(request, 'home/contact-us.html', {'form': form})
     return render(request, 'home/contact-us.html')
 
 
