@@ -55,8 +55,12 @@ class Customer(models.Model):
 class Voltages(models.Model):
 
     volt = models.IntegerField()
-    time_instance = models.DateTimeField()
+    temperature = models.FloatField()
+    insertdate = models.DateTimeField()
+    location = models.CharField(max_length=200)
     bill_no = models.CharField(max_length=200)
+    panel_id = models.CharField(max_length=200)
+    device_id = models.CharField(max_length=200)
 
     class Meta:
         verbose_name_plural = "Voltages"
