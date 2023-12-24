@@ -18,7 +18,7 @@ node {
 
         stage 'Deploy'
             sh "chmod +x -R ${env.WORKSPACE}"
-            sh './deployment/deploy_prod.sh > prd'
+            sh './deployment/deploy_prod.sh'
 
         stage 'Publish results'
             slackSend color: "good", message: "Build successful: `${env.JOB_NAME}#${env.BUILD_NUMBER}` <${env.BUILD_URL}|Open in Jenkins>"
