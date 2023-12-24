@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh root@165.22.213.30 <<EOF
+ssh -tt root@165.22.213.30 <<EOF
   cd smartsanthe
   git pull
   source /root/smartsanthe/ssenv/bin/activate
